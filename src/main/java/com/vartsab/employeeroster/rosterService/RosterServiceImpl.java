@@ -11,7 +11,7 @@ public class RosterServiceImpl implements RosterService {
 
     private final int maxRosterLen = 3;
     private int rosterLength = 0;
-    private Employee[] employeeRoster = new Employee[maxRosterLen];
+    private final Employee[] employeeRoster = new Employee[maxRosterLen];
 
     public String findEmployee ( String firstName, String lastName ) {
         Employee employee2 = new Employee(firstName, lastName);
